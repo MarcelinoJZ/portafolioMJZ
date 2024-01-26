@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inicio -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <img src="img/logo.png" alt="">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                            <li><a href="#sobremi">SOBRE MI</a></li>
+                            <li><a href="#servicios">EXPERIENCIA</a></li>
+                            <li><a href="#portafolio">HABILIDADES</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Icono de las redes sociales -->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Hola</p>
+                <h2>Soy <span>Marcelino Jimenez</span>, Desarollador Web</h2>
+                <p class="descripcion"></p>
+                <a href="#portafolio">Ir a portafolio</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobremi">
+        <div class="contenido-foto">
+            <img src="img/img-perfil.png">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Marcelino Jimenez</span></h2>
+            <h3>Desarollador Web</h3>
+            <p>Estoy listo para integrarme a un equipo de trabajo en el que pueda aportar mi
+                conocimiento y formación, de este modo aumentar mi experiencia profesional en un
+                entorno real, fuera del ámbito académico en una empresa estable.
+                Me gusta tomar retos que me ayuden a adquirir más experiencia en el área de
+                tecnología para fortalecer y mejorar los conocimientos ya adquiridos poniendo los
+                en práctica.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MI EXPERIENCIA</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fas fa-code iconos"></i></span>
+                <h4>FINDEP</h4>
+                <hr>
+                <ul>
+                    <li>GCP</li>
+                    <li>Grafana</li>
+                    <li>PRTG</li>
+                </ul>
+                <p>Monitoreo y creación de paneles para la visualización de los estados de los equipos (CPU, Memoria, Disco, Sistemas, Etc) para garantizar la disponibilidad y eficiencia.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fas fa-code iconos"></i></span>
+                <h4>Bionet</h4>
+                <hr>
+                <ul>
+                    <li>Camaras</li>
+                    <li>Internet</li>
+                    <li>Audio</li>
+                </ul>
+                <p>Configuración y soporte técnico de equipos de internet, cámaras de seguridad y equipos de audio y video.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fas fa-code iconos"></i></span>
+                <h4>Proyecto Terminal</h4>
+                <hr>
+                <ul>
+                    <li>Web</li>
+                    <li>IA</li>
+                    <li>AR</li>
+                </ul>
+                <p>
+                    Desarrollo de una página web en realidad virtual centrada en la visualización de aves, con el propósito de hacer el aprendizaje sobre estas más divertido y accesible. Incluye la implementación de tecnologías de realidad virtual, diseño de interfaz intuitiva, contenido educativo sobre aves.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fas fa-code iconos"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul>
+                    <li>Front</li>
+                    <li>Back</li>
+                    <li>Full</li>
+                </ul>
+                <p>Monitoreo y creación de paneles para la visualización de los estados de los equipos (CPU, Memoria, Disco, Sistemas, Etc) para garantizar la disponibilidad y eficiencia.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fas fa-code iconos"></i></span>
+                <h4>Desarrollador Web</h4>
+                <hr>
+                <ul>
+                    <li>Front</li>
+                    <li>Back</li>
+                    <li>Full</li>
+                </ul>
+                <p>....</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fas fa-code iconos"></i></span>
+                <h4>Analista de Datos</h4>
+                <hr>
+                <ul>
+                    <li>Analisis</li>
+                    <li></li>
+                    <li>...</li>
+                </ul>
+                <p>...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> HTML & CSS</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> Base de Datos</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span> Java</p>
+                <span class="porcentaje">92%</span>
+            </div>
+            <div class="barra">
+                <div id="java" class=""></div>
+            </div>
+        </div>
+    </div>
+
+<!-- Contacto -->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contactame ahora</h3>
+    <div class="contenedor-form">
+        <form action="">
+            <div class="fila mitad">
+                <input type="text" placeholder="Nombre o Empresa" class="input-mitad">
+                <input type="email" placeholder="Correo Electronico" class="input-mitad">
+            </div>
+            <div class="fila">
+                <input type="text" placeholder="Asunto" class="input-full">
+            </div>
+            <div class="fila">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="input-full"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>2023</p>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
