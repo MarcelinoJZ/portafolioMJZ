@@ -19,7 +19,7 @@ html{
 }
 
 #inicio{
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("img/img-inicio.gif");
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("img/img-inicio.gif");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -27,7 +27,7 @@ html{
 
 #inicio .contenido header{
     background-color: rgba(0,0,0,.8);
-    position: fixed;
+    position:fixed;
     width: 100%;
     z-index: 100;
     top: 0;
@@ -158,7 +158,8 @@ html{
 }
 
 #sobremi .sobremi{
-    margin: 0 40px;
+    margin: 0 10px;
+    text-align: justify;
 }
 
 #sobremi .sobremi .titulo-seccion{
@@ -213,15 +214,15 @@ html{
     color: var(--color-basico);
 }
 
-/* Servicios */
+/* experiencias */
 
-#servicios{
+#experiencias{
     padding: 100px 15px;
     text-align: center;
     background-color: var(--color-claro);
 }
 
-#servicios .titulo-seccion{
+#experiencias .titulo-seccion{
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
@@ -230,14 +231,14 @@ html{
     text-decoration-thickness: 5px;
 }
 
-#servicios .fila{
+#experiencias .fila{
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 30px auto;
 }
 
-#servicios .fila .servicio{
+#experiencias .fila .experiencia{
 
     max-width: 350px;
     background-color: var(--color-basico);
@@ -247,16 +248,16 @@ html{
     transition: .5s;
 }
 
-#servicios .fila .servicio:hover{
+#experiencias .fila .experiencia:hover{
     box-shadow: 5px 5px 10px #565656, -5px -5px 10px #bababa;
 }
 
-#servicios .fila .servicio h4{
+#experiencias .fila .experiencia h4{
     font-size: 22px;
     margin-bottom: 25px;
 }
 
-#servicios .fila .servicio .icono{
+#experiencias .fila .experiencia .icono{
     display: inline;
     width: 60px;
     height: 60px;
@@ -266,21 +267,30 @@ html{
     margin-bottom: 25px;
 }
 
-#servicios .fila .servicio hr{
+#experiencias .fila .experiencia hr{
     width: 30%;
     margin: auto;
     color: #000;
     margin-bottom: 25px;
 }
 
-#servicios .fila .servicio ul{
+#experiencias .fila .experiencia ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
+#experiencias .fila .experiencia .actividades{
+    list-style-type: square;
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
 
-#servicios .fila .servicio p{
+#experiencias .fila .experiencia p{
     font-size: 14px;
     line-height: 22px;
 }
@@ -288,7 +298,7 @@ html{
 /* Habilidades*/
 
 .contenedor-skills {
-    background: linear-gradient( #295788cc, rgba(33, 16, 16, 0.8)), url("img/lenguajes.png");
+    background: linear-gradient( #295788cc, rgba(33, 16, 16, .9)), url("img/lenguajes.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -350,35 +360,83 @@ html{
     height: 6px;
     animation: progreso4 2s forwards;
 }
-
+.contenedor-skills .skill .barra .barra-progreso5 {
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progreso5 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso6 {
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progreso6 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso7 {
+    background-color: #fff;
+    width: 85%;
+    height: 6px;
+    animation: progreso7 2s forwards;
+}
+ /*HTML y CSS*/
 @keyframes progreso1 {
     0% {
         width: 0;
     }
     100% {
-        width: 95%;
+        width: 90%;
     }
 }
-
+/* Python */
 @keyframes progreso2 {
     0% {
         width: 0;
     }
     100% {
-        width: 90%;
+        width: 85%;
     }
 }
 
+/* Java */
 @keyframes progreso3 {
     0% {
         width: 0;
     }
     100% {
-        width: 90%;
+        width: 85%;
     }
 }
 
+/* JavaScript */
 @keyframes progreso4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+/* NodeJS */
+@keyframes progreso5 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+/* PostgreSQL */
+@keyframes progreso6 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+/* MySQL */
+@keyframes progreso7 {
     0% {
         width: 0;
     }
@@ -462,16 +520,15 @@ footer a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    margin: 5px;
+    margin: 10px 25px;
     font-size: 26px;
+
 }
 
 /*Reponsive*/ 
 
 @media screen and (max-width: 800px) {
-    .redes {
-        display: none;
-    }
+
     nav {
         display: none;
     }
@@ -517,14 +574,14 @@ footer a {
         font-size: 25px;
         text-align: center;
     }
-    /* Servicios */
-    #servicios {
+    /* experiencias */
+    #experiencias {
         padding: 50px 15px;
     }
-    #servicios .fila {
+    #experiencias .fila {
         display: block;
     }
-    #servicios .fila .servicio {
+    #experiencias .fila .experiencia {
         margin: 10px auto;
     }
     /* Hbilidades */
@@ -552,5 +609,20 @@ footer a {
     #contacto .contenedor-form .mitad input {
         width: 100%;
         margin-bottom: 15px;
+    }
+    /* Footer */
+    footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        margin:5px 15px;
+        font-size: 17px;
     }
 }
